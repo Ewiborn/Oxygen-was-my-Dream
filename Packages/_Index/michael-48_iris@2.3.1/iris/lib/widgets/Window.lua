@@ -398,6 +398,7 @@ return function(Iris: Types.Internal, widgets: Types.WidgetUtility)
                 Window.ZIndex = Iris._config.DisplayOrderOffset
             end
             Window.Name = "Iris_Window"
+            Window.IgnoreGuiInset = true -- Hi, from clair
 
             local WindowButton: TextButton = Instance.new("TextButton")
             WindowButton.Name = "WindowButton"
