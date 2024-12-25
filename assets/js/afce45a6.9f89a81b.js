@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdocs=self.webpackChunkdocs||[]).push([[830],{4410:s=>{s.exports=JSON.parse('{"sourceUrl":"https://github.com/Ewiborn/Oxygen-was-my-Dream/blob/master","baseUrl":"/Oxygen-was-my-Dream/","classOrder":[],"apiCategories":[]}')}}]);

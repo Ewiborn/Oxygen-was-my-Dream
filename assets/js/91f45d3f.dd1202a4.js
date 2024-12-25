@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdocs=self.webpackChunkdocs||[]).push([[715],{718:e=>{e.exports=JSON.parse('{"functions":[],"properties":[],"types":[],"name":"MovementAnimations","desc":"Contains API to control camera effects","source":{"line":7,"path":"src/shared/components/movement/movementAnimations.lua"}}')}}]);
