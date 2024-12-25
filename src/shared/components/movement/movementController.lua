@@ -57,6 +57,7 @@ function MovementController:init()
         ]]
         -- require(script.Parent.obstacles.vaulting):init(self)
         require(script.Parent.obstacles.pipe):init(self)
+        require(script.Parent.obstacles.vaulting):init(self)
         -- require(script.Parent.obstacles.wallRun):init(self)
     end)
 

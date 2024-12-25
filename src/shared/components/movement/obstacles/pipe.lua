@@ -29,7 +29,7 @@ Pipe.Attributes = {
 	@method init
 	@within Pipe
 ]=]
-function Pipe:init(MovementController)
+function Pipe:init(MovementController : {MovementController: {}})
     --[[
     /
     *
@@ -38,11 +38,11 @@ function Pipe:init(MovementController)
     /
     ]]
     RunService.RenderStepped:Connect(function(deltaTime)
-        
+        if not MovementController.Rays.TorsoDown then return end
         if not MovementController.Rays.TorsoDown.Instance or not VectorUtils:CompareVector3XY(self.Attributes.Size, MovementController.Rays.TorsoDown.Instance.Size) then return end
+        
 
-
-        MovementController.CameraController:setAttribute("Balance", "Intensity", 4)
+        --MovementController.CameraController:setAttribute("Balance", "Intensity", 4)
 
     end)
 end

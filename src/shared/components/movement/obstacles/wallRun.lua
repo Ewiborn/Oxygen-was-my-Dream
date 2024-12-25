@@ -1,3 +1,8 @@
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local RunService = game:GetService("RunService")
+
+local VectorUtils = require(ReplicatedStorage.Shared.utils.vector)
+
 local WallRun = {}
 
 --[[
@@ -20,8 +25,8 @@ local WallRun = {}
 	@method init
 	@within Wallrun
 ]=]
-function WallRun:init(Shared : {MovementController: {}})
-    
+function WallRun:init(MovementController : {MovementController: {}})
+	
 end
 
 return WallRun
