@@ -1,3 +1,9 @@
+
+--[=[
+	@class MovementAnimations
+
+	Contains API to control camera effects
+]=]
 return {
     Vault = "rbxassetid://",
     Wallclimb = "rbxassetid://",
