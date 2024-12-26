@@ -1,6 +1,6 @@
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 
-local uiMounter = require(ReplicatedStorage.Shared.services.uiMounter)
+local uiMounter = require(ReplicatedStorage.Shared.utils.uiMounter)
 
 return function ()
    require(script.components.camera.cameraController):init()
