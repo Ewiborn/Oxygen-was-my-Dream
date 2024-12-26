@@ -14,6 +14,28 @@ CameraController.camera = workspace.CurrentCamera
 CameraController.effects = {}
 CameraController.__inited = false
 
+-- ///// Properties
+
+--[=[
+    @prop effects table
+
+    @within CameraController
+]=]
+
+--[=[
+    @prop camera Camera
+
+    @within CameraController
+]=]
+
+--[=[
+    @prop __inited boolean
+
+    @within CameraController
+]=]
+
+
+
 --[=[
 Initializes the CameraController by setting up the current camera and loading effects.
 @tag Setup

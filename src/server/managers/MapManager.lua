@@ -1,22 +1,7 @@
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local Signal = require(ReplicatedStorage.Shared.utils.signalLib)
 
---[[
-/
-*
-*   Map Manager
-*   Events: 
-*    OnInstanceType
-*    OnLoadCall
-*    OnUnloadCall
-*   Functions:
-*    load(InstanceFind : any)
-*    call(name : string)
-*    unload()
-*   Properties:
-*    sub = Folder that contains map, by default: ReplicatedStorage.Assets.map
-/
-]]
+
 local MapManager = {
     level = nil,
     sub = ReplicatedStorage.Assets.map,
