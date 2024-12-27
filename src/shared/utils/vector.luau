@@ -3,7 +3,7 @@ local Vector = {}
 --[=[
 	@class Vector
 
-	Vector Utility
+	Vector Utilities
 ]=]
 
 

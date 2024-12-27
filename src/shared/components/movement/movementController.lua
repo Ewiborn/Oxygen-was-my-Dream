@@ -31,7 +31,6 @@ MovementController.RayLenght = 15 -- lenght in studs.
 
 MovementController.Components = {}
 
-
 MovementController.__characterRaycastParametrs = {}
 
 --[=[
@@ -84,7 +83,7 @@ export type MovementController = {
     Controls : { Enum.KeyCode },
     Rays : Rays,
     RayLenght : number,
-    Components : { Component }
+    Components : { Component },
 }
 
 
@@ -109,7 +108,7 @@ function MovementController:init()
         self.CameraController:init() -- TODO: Setup this from shared 
 
         for _, component : ModuleScript in script.Parent.obstacles:GetChildren() do
-            table.insert(self.Components, component)
+            table.insert(self.Components, require(component):init(self))
         end
 
     end)

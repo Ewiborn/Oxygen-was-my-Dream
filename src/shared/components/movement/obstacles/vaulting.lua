@@ -48,11 +48,11 @@ function Vaulting:onJump(MovementController)
 
 end
 
-function Vaulting:vault(MovementController : {MovementController : {}},Side:Vector3)
+function Vaulting:vault(MovementController : {}, Side : Vector3)
     if self.active or self.cooldown then return end
 
     self.active = true
-    local VaultPart = MovementController.Rays.TorsoForward.Instance :: Part
+    local VaultPart : Part = MovementController.Rays.TorsoForward.Instance
 
     local Offset = (MovementController.Rays.TorsoForward.Position - VaultPart.Position).Unit
     Offset = Offset * (Vector3.new(1,1,1) - (Side:Abs()+Vector3.new(0,1,0)))

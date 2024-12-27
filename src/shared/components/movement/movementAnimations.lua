@@ -2,14 +2,14 @@
 --[=[
 	@class MovementAnimations
 
-	Contains API to control camera effects
+	Contains Animations for movement components
 ]=]
 return {
     Vault = "rbxassetid://",
     Wallclimb = "rbxassetid://",
     Dropkick = "rbxassetid://",
     Fall = {
-        [0] = { -- [Studs]
+        [50] = { -- [Studs]
             [1] = "rbxasssetid://",
             [2] = "rbxasssetid://",
             [3] = "rbxasssetid://",
