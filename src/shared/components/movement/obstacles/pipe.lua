@@ -23,8 +23,13 @@ Pipe.Attributes = {
 	Pipe Movement System
 ]=]
 
+--[=[
 
-function Pipe:init(MovementController)
+	@method init
+	@within Pipe
+
+]=]
+function Pipe:init(MovementController : {MovementController: {}})
     --[[
     /
     *

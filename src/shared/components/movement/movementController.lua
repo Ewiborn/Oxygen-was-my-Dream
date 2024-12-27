@@ -106,6 +106,7 @@ function MovementController:init()
         ]]
 
         self.CameraController:init() -- TODO: Setup this from shared 
+        require(script.Parent.obstacles.vaulting):init(self)
 
         for _, component : ModuleScript in script.Parent.obstacles:GetChildren() do
             table.insert(self.Components, require(component):init(self))
@@ -122,6 +123,16 @@ function MovementController:init()
         self.Rays.HeadForward = workspace:Raycast(
             self.Character.Head.Position, 
             self.Character.Head.CFrame.LookVector * self.RayLenght,
+            self.__characterRaycastParametrs
+        )
+
+        --[[
+        /// Head Up Raycast
+        ]]
+
+        self.Rays.HeadUp = workspace:Raycast(
+            self.Character.Head.Position, 
+            self.Character.Head.CFrame.UpVector * self.RayLenght,
             self.__characterRaycastParametrs
         )
 
